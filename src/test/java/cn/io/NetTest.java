@@ -13,7 +13,7 @@ public class NetTest {
     public static void main(String args[]) throws IOException {
         Socket socketout = new Socket();
         OutputStream outputStream = socketout.getOutputStream();
-        outputStream.write("dddd".getBytes());
+        outputStream.write("aaaaa".getBytes());
         outputStream.flush();
         outputStream.close();
         socketout.close();
