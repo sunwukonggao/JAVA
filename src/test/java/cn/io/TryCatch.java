@@ -9,8 +9,7 @@ import java.io.OutputStream;
  */
 public class TryCatch {
     public static void main(String[] args) throws IOException {
-        try(OutputStream outputStream = new FileOutputStream("e:\\test.txt"))
-        {
+        try (OutputStream outputStream = new FileOutputStream("e:\\test.txt")) {
             outputStream.write("test".getBytes());
             outputStream.flush();
         }
