@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * Created by gaojc19 on 2016/12/28.
  */
-public class InputOutput {
+public class InputOutputTest {
     public static void main(String[] args) throws IOException {
         OutputStream outputStream = new FileOutputStream("e:\\test.txt");
         outputStream.write("test".getBytes());
