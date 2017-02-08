@@ -13,6 +13,7 @@ public class PipeTest {
 
         final PipedOutputStream outputStream = new PipedOutputStream();
         final PipedInputStream inputStream = new PipedInputStream();
+        // final PipedInputStream inputStream = new PipedInputStream(outputStream);
         inputStream.connect(outputStream);
         Thread thread1 = new Thread(new Runnable() {
             @Override
