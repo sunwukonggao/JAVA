@@ -14,6 +14,7 @@ public class ReaderTest {
         writer.close();
         InputStream inputStream = new FileInputStream("e:\\test.txt");
         // Reader reader=new FileReader("D:\\test.txt");
+        // Reader reader=new BufferedReader(new FileReader("D:\\test.txt"));
         try (Reader reader = new InputStreamReader(inputStream, "UTF-8")) {
             int data = reader.read();
             while (data != -1) {
