@@ -1,4 +1,4 @@
-package test.java.cn.io;
+package test.java.cn.net;
 
 import java.io.IOException;
 import java.io.InputStream;
